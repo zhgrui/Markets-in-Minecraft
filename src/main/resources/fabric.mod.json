@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "monomod",
+  "version": "${version}",
+
+  "name": "Mono Mod",
+  "description": "Rui is having fun in life. Please leave him alone.",
+  "authors": [
+    "Rui Zhang"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "GNU General Public License v3.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.zhangrui.monomod.MonoMod"
+    ],
+    "client": [
+      "net.zhangrui.monomod.MonoModClient"
+    ]
+  },
+  "mixins": [
+    "monomod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
